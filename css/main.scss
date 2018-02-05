@@ -11,25 +11,27 @@ $base-line-height:	1.5;
 
 $spacing-unit:		30px;
 
+//Stole these from the USNA website
+$usna-blue:			#1E5282;
+$usna-blue-light:	lighten($usna-blue, 10%);
+$usna-blue-dark:	darken($usna-blue, 10%);
+$usna-gold:			#FBC42B;
+
 $text-color:		#111;
-$background-color:	#FDFDFD;
-$accent-color:		#2A7AE2;
 $gray-color:		#828282;
 $gray-color-light:	lighten($gray-color, 40%);
 $gray-color-dark:	darken($gray-color, 25%);
 
-//Stole these from the USNA website
-$usna-blue:			#1E5282;
-$usna-blue-light:	lighten($usna-blue, 25%);
-$usna-blue-dark:	darken($usna-blue, 10%);
-$usna-gold:			#FBC42B;
-
+$background-color:	$usna-blue-dark;
+$wrapper-color:		#F0F0F0;
+$accent-color:		#2A7AE2;
 
 $link-color:		#0000FF;
 $link-color-visited:#800080;
 
-$button-idle:		$usna-blue-dark;
-$button-active:		$usna-blue;
+$button-idle:		$usna-blue;
+$button-active:		$usna-blue-light;
+$button-border:		$gray-color-light;
 
 $content-width:		900px;
 

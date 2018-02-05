@@ -12,17 +12,18 @@
 
 li.navbar-button{
 	float: left;
+	text-align: center;
+	border-left: 1px solid $button-border;
 }
 
 li.navbar-button a{
 	display: block;
 	color: white;
-	text-align: center;
 	padding: 10px 16px;
 	text-decoration: none;
 	text-transform: capitalize;
 	transition-duration: 0.4s;
-	
+
 	// Mobile-friendly navbar - smaller blocks.
 	@include media-query($on-mobile) {
 		padding: 5px 8px;
@@ -32,6 +33,10 @@ li.navbar-button a{
 li.navbar-button a:hover{
 	background-color: $button-active;
 	text-shadow: 1px 1px 2px #404040;
+}
+
+li.navbar-button:last-child{
+	border-right: 1px solid $button-border;
 }
 
 .navbar-active{

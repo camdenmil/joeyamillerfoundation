@@ -86,6 +86,14 @@ blockquote {
 	}
 }
 
+//Horizontal Rules
+hr{
+	margin: none;
+	margin-bottom: 1em;
+	border: none;
+	border-top: 1px solid $gray-color;
+}
+
 %clearfix {
 	&:after {
 		content: "";
