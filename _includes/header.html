@@ -1,0 +1,25 @@
+<header class="site-header">
+
+	<nav class="navbar">
+		<ul class="navbar-list">
+
+			<a href={{ site.url }}{{ site.baseurl }}><li class="site-title">{{ site.title }}</li></a>
+
+			<!-- Build a navbar -->
+			<div class="button-container">
+				{% assign pages = site.pages | sort:"weight" %}
+				{% for navpage in pages %}
+					{% if navpage.title %}
+						{% if page.url == navpage.url and navpage.title != 'Home' %}
+							<li class="navbar-button navbar-active">
+						{% else %}
+							<li class="navbar-button">
+						{% endif %}
+							<a class="navbar-button" href="{{ navpage.url | prepend: site.baseurl }}">{{ navpage.title }}</a>
+					{% endif %}
+				{% endfor %}
+				<li class="navbar-button">
+			</div>
+		</ul>
+	</nav>
+</header>
